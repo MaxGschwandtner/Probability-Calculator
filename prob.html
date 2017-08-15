@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+  <title>Wahrscheinlichkeitsrechner</title>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" href="prob.css">
+  <script src="prob.js"></script>
+</head>
+<body>
+  <div id="container">
+    <header>
+      <h2>Wahrscheinlichkeitsrechner</h2>
+    </header>
+    <section>
+      <p>Ziehe K Elemente aus N Elementen.</p>
+      <select id="zurück">
+        <option value="mZ">mit Zurücklegen</option>
+        <option value="oZ">ohne Zurücklegen</option>
+      </select>
+      <select id="reihenfolge">
+        <option value="Rw">Reihenfolge ist wichtig</option>
+        <option value="Rn">Reihenfolge ist nicht wichtig</option>
+      </select>
+      <br><br>
+      <form name="prob" onsubmit="return calculate()">Gib K und N ein!<br><br>
+        K: <input type="number" name="K" min="1" value="1">
+        N: <input type="number" name="N" min="1" value="1">
+        <!-- Z: <input type="number" name="Z" min="1" value="1"> -->
+        <input type="submit" name="submit" value="Testen">
+      </form>
+      <div id="result"></div>
+    </section>
+  </div>
+</body>
+</html>
