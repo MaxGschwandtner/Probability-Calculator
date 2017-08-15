@@ -1,2 +1,2 @@
 # Probability-Calculator
-A simple tool for working with probapilistic calculations
+A simple tool for working with probabilistic calculations.
